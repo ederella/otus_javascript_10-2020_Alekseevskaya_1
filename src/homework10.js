@@ -14,11 +14,12 @@ export function getStringTypeByInput() {
 
   if (regDate.test(text)) {
     return "date";
-  } if (regEmail.test(text)) {
+  }
+  if (regEmail.test(text)) {
     return "email";
-  } if (regPhone.test(text)) {
+  }
+  if (regPhone.test(text)) {
     return "phone";
-  } 
-    return "not found";
-  
+  }
+  return "not found";
 }

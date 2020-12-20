@@ -19,7 +19,8 @@ export function isWord(text) {
 export function pow(a, x) {
   if (x === 0) {
     return 1;
-  } if (x > 1) {
+  }
+  if (x > 1) {
     let result = a;
     for (let i = 1; i < x; i++) {
       result *= a;

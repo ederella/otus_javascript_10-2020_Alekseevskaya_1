@@ -9,19 +9,18 @@ export function RightTriangle(hip, leg1, leg2) {
   this.isRight = function checkIfRight() {
     if (hip ** 2 === leg1 ** 2 + leg2 ** 2) {
       return true;
-    } 
-      return false;
-    
+    }
+    return false;
   };
 }
 export function defineTriangle(a, b, c) {
   if (a > b && a > c) {
     return new RightTriangle(a, b, c).isRight();
-  } if (b > a && b > c) {
+  }
+  if (b > a && b > c) {
     return new RightTriangle(b, a, c).isRight();
-  } 
-    return new RightTriangle(c, a, b).isRight();
-  
+  }
+  return new RightTriangle(c, a, b).isRight();
 }
 
 /* 2.Пользователь вводит число R. Написать программу,
@@ -30,8 +29,8 @@ export function defineTriangle(a, b, c) {
 
 export function printCircleInfo() {
   const r = window.prompt("Enter radius");
-  console.log(`Circle length: ${  (2 * Math.PI * r).toFixed(2)}`);
-  console.log(`Circle square: ${  (Math.PI * r ** 2).toFixed(2)}`);
+  console.log(`Circle length: ${(2 * Math.PI * r).toFixed(2)}`);
+  console.log(`Circle square: ${(Math.PI * r ** 2).toFixed(2)}`);
 }
 /* Пользователь вводит числа a, b и c. Написать
 программу, выводящую корни квадратного

@@ -12,7 +12,7 @@ export function printSumOfIntegerBetween50And100() {
 
 export function printMultiplicationTable() {
   for (let i = 0; i <= 10; i++) {
-    console.log(`7*${i}=${  7 * i}`);
+    console.log(`7*${i}=${7 * i}`);
   }
 }
 

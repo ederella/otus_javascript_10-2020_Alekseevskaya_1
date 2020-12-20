@@ -30,9 +30,8 @@ export function printMaxElement(numbersArr) {
   const maxElement = numbersArr.reduce((max, current) => {
     if (max > current) {
       return max;
-    } 
-      return current;
-    
+    }
+    return current;
   });
   console.log(maxElement);
 }
@@ -40,9 +39,8 @@ export function printMinElement(numbersArr) {
   const minElement = numbersArr.reduce((min, current) => {
     if (min < current) {
       return min;
-    } 
-      return current;
-    
+    }
+    return current;
   });
   console.log(minElement);
 }

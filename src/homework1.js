@@ -3,7 +3,7 @@
 и сумму этих чисел. */
 
 export function printSumAndProduction(a, b) {
-  console.log(`${a}+${b}=${a + b}; ${a}*${b}=${a * b}`);
+  console.log(`${a}+${b}=${  a + b  }; ${a}*${b}=${  a * b}`);
 }
 
 /* 2.В двух переменных хранятся строки символов.
@@ -11,7 +11,7 @@ export function printSumAndProduction(a, b) {
 суммарное количество символов в обоих строках. */
 
 export function printTotalLengthOfStrings(str1, str2) {
-  console.log(`total=${str1.length + str2.length}`);
+  console.log(`total=${  str1.length + str2.length}`);
 }
 
 /* 3.Написать программу, которая запрашивает у

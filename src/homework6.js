@@ -10,22 +10,12 @@
 значение числа a, возведённого в степень x. */
 
 export function diff(num1, num2) {
-  return num2 > num1 ? num2 - num1 : num1 - num2;
+  return Math.abs(num1 - num2);
 }
 export function isWord(text) {
   const trimmedText = text.trim();
-  return trimmedText.length > 0 && trimmedText.indexOf(" ") === -1;
+  return trimmedText.length > 0 && trimmedText.split(/,\s+|\s+|,/).length === 1;
 }
 export function pow(a, x) {
-  if (x === 0) {
-    return 1;
-  }
-  if (x > 1) {
-    let result = a;
-    for (let i = 1; i < x; i++) {
-      result *= a;
-    }
-    return result;
-  }
-  return undefined;
+  return a ** x;
 }

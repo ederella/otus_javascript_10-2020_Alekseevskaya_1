@@ -18,10 +18,7 @@ export function createUserAndSetAgeFromInput() {
 }
 
 export function createAdmin(user) {
-  const admin = {};
-  Object.assign(admin, user);
-  admin.role = "admin";
-  return admin;
+  return { ...user, role: "admin" };
 }
 
 export function createVariablesFromFields(admin) {

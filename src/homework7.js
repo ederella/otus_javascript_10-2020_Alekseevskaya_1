@@ -9,12 +9,12 @@
 3.*Если параграфов становится больше 5, первый из
 них удаляется. */
 
-function showButton() {
+export function showButton() {
   const btn = document.querySelector(".button");
   btn.hidden = false;
 }
 
-function addParagraphFromInput() {
+export function addParagraphFromInput() {
   const div = document.querySelector(".div");
   const p = document.createElement("p");
   const input = document.querySelector(".input");
@@ -27,7 +27,7 @@ function addParagraphFromInput() {
   }
 }
 
-function pageLoad() {
+export function pageLoad() {
   const btn = document.querySelector(".button");
   const input = document.querySelector(".input");
 
@@ -35,4 +35,3 @@ function pageLoad() {
   btn.addEventListener("click", addParagraphFromInput);
   input.addEventListener("input", showButton);
 }
-pageLoad();

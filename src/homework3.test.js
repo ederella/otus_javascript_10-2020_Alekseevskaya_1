@@ -9,9 +9,6 @@ describe("Homework 3", () => {
     jest.spyOn(console, "log");
   });
 
-  afterEach(() => {
-    jest.clearAllMocks();
-  });
   describe("Check printSumOfIntegerBetween50And100", () => {
     it("prints 3825", () => {
       printSumOfIntegerBetween50And100();

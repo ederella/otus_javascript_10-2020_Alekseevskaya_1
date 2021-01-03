@@ -16,9 +16,6 @@ describe("Homework 8", () => {
     jest.spyOn(console, "log");
   });
 
-  afterEach(() => {
-    jest.clearAllMocks();
-  });
   describe("Check printDayNameByDateFromInput", () => {
     jest.spyOn(window, "prompt").mockImplementation(() => "04.12.2020");
     jest.spyOn(Date.prototype, "getDay").mockReturnValue(5);

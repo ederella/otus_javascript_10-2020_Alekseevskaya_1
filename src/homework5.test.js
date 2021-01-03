@@ -10,10 +10,6 @@ beforeEach(() => {
   jest.spyOn(console, "log");
 });
 
-afterEach(() => {
-  jest.clearAllMocks();
-});
-
 describe("Homework 5", () => {
   const simpleArray = getSimpleArray();
 

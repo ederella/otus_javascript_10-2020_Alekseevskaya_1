@@ -5,9 +5,6 @@ describe("Homework 9", () => {
     jest.spyOn(console, "log");
   });
 
-  afterEach(() => {
-    jest.clearAllMocks();
-  });
   describe("Check defineTriangle", () => {
     it("returns true for 3,4,5", () => {
       expect(defineTriangle(3, 4, 5)).toBe(true);

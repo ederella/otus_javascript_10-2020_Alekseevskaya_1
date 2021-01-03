@@ -8,10 +8,6 @@ beforeEach(() => {
   jest.spyOn(console, "log");
 });
 
-afterEach(() => {
-  jest.clearAllMocks();
-});
-
 describe("Homework 1", () => {
   describe("Check printSumAndProduction", () => {
     it("prints 1+2=3; 1*2=2 for 1 and 2", () => {

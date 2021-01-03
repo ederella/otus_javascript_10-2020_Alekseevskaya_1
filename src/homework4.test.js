@@ -8,10 +8,6 @@ beforeEach(() => {
   jest.spyOn(console, "log");
 });
 
-afterEach(() => {
-  jest.clearAllMocks();
-});
-
 describe("Homework 4", () => {
   describe("Check createUserAndSetAgeFromInput", () => {
     it("creates user, age 45, name John", () => {

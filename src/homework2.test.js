@@ -9,9 +9,6 @@ describe("Homework 2", () => {
     jest.spyOn(console, "log");
   });
 
-  afterEach(() => {
-    jest.clearAllMocks();
-  });
   describe("Check printMax", () => {
     it("prints max among 1 and 2", () => {
       printMax(1, 2);

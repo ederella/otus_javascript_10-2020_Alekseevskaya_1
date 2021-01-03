@@ -1,7 +1,7 @@
 import { pageLoad, showButton, addParagraphFromInput } from "./homework7";
 
 describe("Homework 7", () => {
-  var btn, inp, el;
+  let btn, inp, el;
   beforeEach(() => {
     document.body.innerHTML = `<div class="div">
     <p class= "text1">Сверстать страницу </p>
